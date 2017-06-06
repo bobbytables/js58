@@ -31,4 +31,24 @@ $(function(){
     // Set the input value to a blank string
     $('#number-input').val("");
   });
+
+  // $('#a-button').click(function() {
+  //   $('body').addClass('single-click');
+  //   $('body').removeClass('double-click');
+  // })
+
+  // $('#a-button').dblclick(function() {
+  //   $('body').addClass('double-click');
+  //   $('body').removeClass('single-click');
+  // })
+
+  var clickCounter = 0;
+  $('#a-button').click(function() {
+    if(clickCounter % 2 == 0) {
+      $('body').css('background-color', 'purple')
+    } else {
+      $('body').css('background-color', 'orange')
+    }
+    clickCounter++
+  })
 })
