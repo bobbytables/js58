@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>💎</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script src="video.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+  <!-- Add a row using the bootstrap class -->
+  <div class="row">
+    <!-- make the column 12 wide on medium sized screens -->
+    <div class="col-md-12">
+      <h1>Welcome to our app</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Get The Weather</h2>
+
+      <input type="text" id="longitude" placeholder="Enter in a longitude" /><br>
+      <input type="text" id="latitude" placeholder="Enter in a latitude" /><br>
+      <button id="get-weather" class="btn btn-primary">Get the weather</button>
+
+      <marquee id="loading-marquee" scrollamount="30">Loading...</marquee>
+
+      <div class="panel">
+        <div class="panel-body">
+          Current Temperature: <span id="current-temp"></span><br>
+          Current Humidity: <span id="current-humidity"></span><br>
+          Current Wind: <span id="current-wind"></span><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Random Video</h2>
+      <button id="random-video-btn" class="btn btn-default">Go!</button>
+
+      <div id="random-video">
+      </div>
+
+      <input id="random-video-id" placeholder="Video ID"><br>
+      <button id="add-video" class="btn btn-primary">Add To Pool</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
